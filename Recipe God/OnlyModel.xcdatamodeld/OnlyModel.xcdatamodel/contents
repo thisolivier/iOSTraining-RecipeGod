@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13233.4" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Ingredient" representedClassName="Ingredient" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RecipeCoordinator" inverseName="ingredientsForRecipe" inverseEntity="RecipeCoordinator" syncable="YES"/>
+    </entity>
+    <entity name="Recipe" representedClassName="Recipe" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ingredients" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RecipeCoordinator" inverseName="recipesWithIng" inverseEntity="RecipeCoordinator" syncable="YES"/>
+    </entity>
+    <entity name="RecipeCoordinator" representedClassName="RecipeCoordinator" syncable="YES" codeGenerationType="class">
+        <relationship name="ingredientsForRecipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="recipes" inverseEntity="Ingredient" syncable="YES"/>
+        <relationship name="recipesWithIng" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="ingredients" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Ingredient" positionX="2194" positionY="3375" width="128" height="73"/>
+        <element name="Recipe" positionX="2509" positionY="3480" width="128" height="73"/>
+        <element name="RecipeCoordinator" positionX="2223" positionY="3494" width="128" height="73"/>
+    </elements>
+</model>

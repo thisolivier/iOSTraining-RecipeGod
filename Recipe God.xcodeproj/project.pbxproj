@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0928D98B1F718E9900E682DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0928D98A1F718E9900E682DF /* AppDelegate.swift */; };
-		0928D98D1F718E9900E682DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0928D98C1F718E9900E682DF /* ViewController.swift */; };
+		0928D98D1F718E9900E682DF /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0928D98C1F718E9900E682DF /* IngredientsViewController.swift */; };
 		0928D9901F718E9900E682DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0928D98E1F718E9900E682DF /* Main.storyboard */; };
 		0928D9931F718E9900E682DF /* Recipe_God.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0928D9911F718E9900E682DF /* Recipe_God.xcdatamodeld */; };
 		0928D9951F718E9900E682DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0928D9941F718E9900E682DF /* Assets.xcassets */; };
 		0928D9981F718E9900E682DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0928D9961F718E9900E682DF /* LaunchScreen.storyboard */; };
 		0928D9A31F718E9A00E682DF /* Recipe_GodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0928D9A21F718E9A00E682DF /* Recipe_GodTests.swift */; };
 		0928D9AE1F718E9A00E682DF /* Recipe_GodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0928D9AD1F718E9A00E682DF /* Recipe_GodUITests.swift */; };
+		0928D9BC1F71A38400E682DF /* EditIngViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0928D9BB1F71A38400E682DF /* EditIngViewController.swift */; };
+		0928D9C11F71DA1500E682DF /* IngCellClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0928D9C01F71DA1500E682DF /* IngCellClass.swift */; };
+		092EEF841F720244004CF4A3 /* SingleIngTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EEF831F720244004CF4A3 /* SingleIngTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,7 @@
 /* Begin PBXFileReference section */
 		0928D9871F718E9900E682DF /* Recipe God.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe God.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0928D98A1F718E9900E682DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0928D98C1F718E9900E682DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0928D98C1F718E9900E682DF /* IngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
 		0928D98F1F718E9900E682DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0928D9921F718E9900E682DF /* Recipe_God.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Recipe_God.xcdatamodel; sourceTree = "<group>"; };
 		0928D9941F718E9900E682DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		0928D9A91F718E9A00E682DF /* Recipe GodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Recipe GodUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0928D9AD1F718E9A00E682DF /* Recipe_GodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe_GodUITests.swift; sourceTree = "<group>"; };
 		0928D9AF1F718E9A00E682DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0928D9BB1F71A38400E682DF /* EditIngViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditIngViewController.swift; sourceTree = "<group>"; };
+		0928D9C01F71DA1500E682DF /* IngCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngCellClass.swift; sourceTree = "<group>"; };
+		092EEF831F720244004CF4A3 /* SingleIngTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleIngTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,16 @@
 		0928D9891F718E9900E682DF /* Recipe God */ = {
 			isa = PBXGroup;
 			children = (
-				0928D98A1F718E9900E682DF /* AppDelegate.swift */,
-				0928D98C1F718E9900E682DF /* ViewController.swift */,
 				0928D98E1F718E9900E682DF /* Main.storyboard */,
+				0928D98C1F718E9900E682DF /* IngredientsViewController.swift */,
+				0928D9C01F71DA1500E682DF /* IngCellClass.swift */,
+				0928D9BB1F71A38400E682DF /* EditIngViewController.swift */,
+				092EEF831F720244004CF4A3 /* SingleIngTableViewController.swift */,
 				0928D9941F718E9900E682DF /* Assets.xcassets */,
 				0928D9961F718E9900E682DF /* LaunchScreen.storyboard */,
 				0928D9991F718E9900E682DF /* Info.plist */,
 				0928D9911F718E9900E682DF /* Recipe_God.xcdatamodeld */,
+				0928D98A1F718E9900E682DF /* AppDelegate.swift */,
 			);
 			path = "Recipe God";
 			sourceTree = "<group>";
@@ -262,7 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0928D98D1F718E9900E682DF /* ViewController.swift in Sources */,
+				0928D98D1F718E9900E682DF /* IngredientsViewController.swift in Sources */,
+				0928D9BC1F71A38400E682DF /* EditIngViewController.swift in Sources */,
+				092EEF841F720244004CF4A3 /* SingleIngTableViewController.swift in Sources */,
+				0928D9C11F71DA1500E682DF /* IngCellClass.swift in Sources */,
 				0928D98B1F718E9900E682DF /* AppDelegate.swift in Sources */,
 				0928D9931F718E9900E682DF /* Recipe_God.xcdatamodeld in Sources */,
 			);
@@ -433,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CNHB9B5GX6;
 				INFOPLIST_FILE = "Recipe God/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "oliviertests.Recipe-God";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -448,6 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CNHB9B5GX6;
 				INFOPLIST_FILE = "Recipe God/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "oliviertests.Recipe-God";
 				PRODUCT_NAME = "$(TARGET_NAME)";

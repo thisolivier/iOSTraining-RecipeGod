@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13233.4" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="IngEntity" representedClassName="IngEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IngRecipeJoinEntity" inverseName="ingUsedInRecipe" inverseEntity="IngRecipeJoinEntity" syncable="YES"/>
+    </entity>
+    <entity name="IngRecipeJoinEntity" representedClassName="IngRecipeJoinEntity" syncable="YES" codeGenerationType="class">
+        <relationship name="ingUsedInRecipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IngEntity" inverseName="recipes" inverseEntity="IngEntity" syncable="YES"/>
+        <relationship name="recipesUsingIng" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RecipeEntity" inverseName="ingredients" inverseEntity="RecipeEntity" syncable="YES"/>
+    </entity>
+    <entity name="RecipeEntity" representedClassName="RecipeEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ingredients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IngRecipeJoinEntity" inverseName="recipesUsingIng" inverseEntity="IngRecipeJoinEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="IngEntity" positionX="0" positionY="45" width="128" height="90"/>
+        <element name="IngRecipeJoinEntity" positionX="27" positionY="72" width="128" height="75"/>
+        <element name="RecipeEntity" positionX="-36" positionY="9" width="128" height="75"/>
+    </elements>
 </model>
